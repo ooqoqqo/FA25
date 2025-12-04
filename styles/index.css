@@ -1,0 +1,307 @@
+
+/* Basic reset and body styling */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  color:#5a4a3c;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #fdf7ef;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Navigation styling */
+nav {
+  font-size: 17.5px;
+  letter-spacing: 0.4px;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: #6c4a28;
+  margin: 0 6px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #7da17d;
+}
+
+nav a.active {
+  text-decoration: underline;
+  text-decoration-color: #7da17d;
+  text-decoration-thickness: 2px;
+}
+
+nav .divider {
+  color: #b69b7b;
+}
+
+nav a.Book {
+  display: inline-block;
+  background-color: #f4faf4;
+  border: 1.6px solid #7da17d;
+  border-radius: 16px;
+  padding: 4px 14px;
+  color: #446944;
+}
+
+/* Book Now button */
+.Book {
+  display: inline-block;
+  background-color: #f4faf4;
+  border: 1.8px solid #7da17d;
+  border-radius: 15px;
+  color: #446944;
+  font-weight: 500;
+  padding: 5px 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Header & Page container */
+header {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.page-shell {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto 80px;
+  padding: 30px 50px 60px;
+  position: relative;
+  display: inline-block;
+}
+
+.page-shell h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 44px;
+  text-align: center;
+  color: #6c4a28;
+  margin: 20px 0 25px;
+}
+
+.video-wrapper .leaf {
+  position: absolute;
+  width: 120px;
+  height: auto;
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.leaf {
+  position: absolute;
+  width: 120px;
+  height: auto;
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.leaf.bottom-left {
+  bottom: -60px;
+  left: -60px;
+}
+
+.leaf.top-right {
+  top: -60px;
+  right: -60px;
+  transform: rotate(180deg);
+}
+
+/* Video container styling */
+video {
+  width: 70%;
+  max-width: 850px;
+  height: auto;
+  display: block;
+  margin: 0 auto 40px;
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Outer rounded panel */
+.content-panel {
+  position: relative;
+  background-color: #f8efe1;
+  border-radius: 30px;
+  padding: 40px 40px 60px;
+  overflow: hidden;
+}
+
+/* Corner leaves */
+.corner-leaf {
+  position: absolute;
+  width: 140px;
+  height: auto;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.corner-leaf.bottom-left {
+  bottom: -35px;
+  left: -10px;
+}
+
+.corner-leaf.top-right {
+  top: -35px;
+  right: -10px;
+  transform: rotate(180deg);
+}
+
+/* Columns layout */
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* CONTACT CARD (LEFT) */
+.contact-card {
+  background-color: #dfe7d3;
+  border-radius: 35px;
+  padding: 35px 40px 40px;
+  text-align: left;
+}
+
+.contact-card h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  margin: 0 0 10px;
+  color: #6c4a28;
+}
+
+.contact-card label {
+  display: block;
+  font-size: 14px;
+  margin-top: 18px;
+  margin-bottom: 4px;
+}
+
+.contact-card input,
+.contact-card textarea {
+  width: 100%;
+  border-radius: 15px;
+  border: 2px solid #6c4a28;
+  background-color: #fdf7ef;
+  padding: 10px 10px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 14px;
+  color: #5a4a3c;
+}
+
+.contact-card textarea {
+  height: 190px;
+  resize: none;
+  padding: 5px;
+}
+
+.bliss-submit-filled {
+  margin: 18px auto 0;
+  display: block;
+  padding: 10px 28px;
+  border-radius: 999px;
+  border: none;
+  background-color: #6c4a28;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.25s ease;
+}
+
+.bliss-submit-filled:hover {
+  background-color: #8da27d;
+}
+
+.schedule-button {
+  margin: 18px auto 0;
+  display: block;
+  padding: 10px 28px;
+  border-radius: 999px;
+  border: none;
+  background-color: #6c4a28;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.25s ease;
+}
+
+.schedule-button:hover {
+  background-color: #8da27d;
+}
+/* FAQ CARD (RIGHT) */
+.faq-card {
+  border-radius: 55px;
+  border: 3px solid #8da27d;
+  background-color: #fdf7ef;
+  padding: 45px 55px 40px;
+  text-align: left;
+}
+
+.faq-card h2 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  margin: 0 0 30px;
+  color: #6c4a28;
+}
+
+.faq-item {
+  margin-bottom: 25px;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.faq-item strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 15px;
+  color: #6c4a28;
+}
+
+.policy-heading {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  text-align: center;
+  margin: 30px 0 10px;
+  color: #6c4a28;
+}
+
+.policy-text {
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* CTA button */
+.cta-wrapper {
+  margin-top: 14px;
+  text-align: center;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 14px 56px;
+  background-color: #8b5422;   /* warm brown */
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 14px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
